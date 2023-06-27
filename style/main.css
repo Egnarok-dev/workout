@@ -1,0 +1,877 @@
+:root {
+    --main-font-color: #1C1C1E;
+    --secondary-font-color: #C5C5C5;
+    --third-font-color: #064BB4;
+    --font-white-color: #FFFFFF;
+    --accent: #BCFF5E;
+    --card_background-color: #FFFFFF;
+    --background: #F9F9FB;
+    --secondary-background-color: #064BB4;
+    --border: #E9EBED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+body {
+    background-color: var(--background);
+}
+
+.container {
+    width: 78.125vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    background-color: #064bb4;
+    z-index: 990;
+}
+
+header a {
+    color: #8e8e93;
+}
+
+header nav {
+    width: 78.125vw;
+    height: 86px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .nav_logo {
+    width: 8.008vw;
+    height: 40px;
+    margin: auto 0;
+}
+
+header nav .nav_logo a {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.065em;
+}
+
+header nav .nav_menu {
+    width: 59.570vw;
+    height: 24px;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .nav_menu .menu_categories {
+    width: 32.552vw;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+header nav .nav_menu .menu_categories li:first-child a {
+    color: white;
+}
+
+header nav .nav_menu .menu_bar {
+    width: 16.536vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+}
+
+header nav .nav_menu .menu_bar li .log_in-btn {
+    width: 5.404vw;
+    height: 46px;
+    margin: 0 16px 0 38px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: #064bb4;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #ffffff;
+}
+
+header nav .nav_menu .menu_bar li .sign_up-btn {
+    width: 5.404vw;
+    height: 46px;
+    background: #bcff5e;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+}
+
+.first_screen {
+    width: 98.9vw;
+    padding-top: 86px;
+    background-color: #064BB4;
+}
+
+.first_screen .container .upper_section {
+    display: flex;
+}
+
+.first_screen main {
+    width: 40.105vw;
+    margin-top: 62px;
+    position: relative;
+    z-index: 100;
+}
+
+.first_screen main h1 {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
+
+.first_screen main p {
+    width: 30.083vw;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #C7C7CC;
+}
+
+.first_screen main button {
+    width: 11.458vw;
+    height: 56px;
+    margin-top: 44px;
+    background: #BCFF5E;
+    border-radius: 24px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+.first_screen main section {
+    margin-top: 80px;
+    width: 32.096vw;
+}
+
+.first_screen main section .brand_list {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_screen .container aside {
+    width: 53.646vw;
+    height: 949px;
+    position: absolute;
+    top: 105px;
+    left: 588px;
+    /* margin: 0 56px 180px 504px; */
+    background-image: url(../gallery/images/first_screen_man.png);
+}
+
+.first_screen .container aside .first_card {
+    margin: 179px 144px 214px 577px;
+    position: relative;
+    z-index: 2;
+}
+
+.first_screen .container aside .second_card {
+    margin: 0 306px 128px 412px;
+    position: relative;
+    z-index: 2;
+}
+
+.first_screen .container aside .first_ellipse {
+    width: 41.111vw;
+    height: 199.74px;
+    position: absolute;
+    top: 255px;
+    left: 75px;
+}
+
+.first_screen .container aside .second_ellipse {
+    width: 26.170vw;
+    height: 127.15px;
+    position: absolute;
+    top: 450px;
+    left: 225px;
+}
+
+
+.first_screen .container .under_section {
+    width: 78.125vw;
+    margin-top: 120px;
+    padding-bottom: 98px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_screen .container .under_section .our_program {
+    width: 56.836vw;
+    display: flex;
+    background-color: white;
+    box-shadow: 64px 64px 80px rgba(8, 23, 45, 0.16);
+    border-radius: 20px;
+    position: relative;
+}
+
+.first_screen .container .under_section .card {
+    width: 18.945vw;
+    padding: 24px;
+}
+
+.first_screen .container .under_section .card h4 {
+    width: 11.589vw;
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+}
+
+.first_screen .container .under_section .card p {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+.first_screen .container .under_section .card a {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.first_screen .container .under_section .card a img {
+    margin-left: 5.67px;
+}
+
+.first_screen .container .under_section .card:nth-child(2) {
+    background-color: #BCFF5E;
+}
+
+.first_screen .container .under_section .aside_box {
+    width: 17.122vw;
+    margin-top: 11px;
+}
+
+.first_screen .container .under_section .aside_box h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
+
+.first_screen .container .under_section .aside_box p {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #D1D1D6;
+}
+
+.second_screen {
+    width: 100%;
+    padding-top: 120px;
+}
+
+.second_screen .container h2 {
+    width: 582px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+}
+
+.second_screen .container .info_box {
+    display: flex;
+    margin-top: 56px;
+}
+
+.second_screen .container article {
+    width: 521px;
+    padding: 32px 40px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.second_screen .container article h3 {
+    width: 393px;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.005em;
+}
+
+.second_screen .container article section {
+    width: 441px;
+    margin-top: 45px;
+}
+
+.second_screen .container article section div {
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+}
+
+.second_screen .container article section div p {
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+}
+
+.second_screen .container article .border_line {
+    margin-top: 40px;
+    border: 1px solid #E9EBED;
+}
+
+.second_screen .container article button {
+    width: 150px;
+    height: 56px;
+    margin-top: 40px;
+    background: #BCFF5E;
+    border-radius: 24px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+.second_screen .container aside {
+    margin: 27.5px 0 27.5px 48px;
+}
+
+.third_screen {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.third_screen .container .info_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third_screen .container article {
+    width: 521px;
+    padding: 32px 40px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.third_screen .container article h3 {
+    width: 393px;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.005em;
+}
+
+.third_screen .container article section {
+    width: 441px;
+    margin-top: 45px;
+}
+
+.third_screen .container article section div {
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+}
+
+.third_screen .container article section div p {
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+}
+
+.third_screen .container article .border_line {
+    margin-top: 40px;
+    border: 1px solid #E9EBED;
+}
+
+.third_screen .container article button {
+    width: 150px;
+    height: 56px;
+    margin-top: 40px;
+    background: #BCFF5E;
+    border-radius: 24px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+.third_screen .container aside {
+    margin: 27.5px 48px 27.5px 0;
+}
+
+.fourth_screen {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.fourth_screen .container .btn {
+    width: 116px;
+    height: 38px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #E9EBED;
+    background-color: #F9F9FB;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #064BB4;
+}
+
+.fourth_screen .container h2 {
+    width: 776px;
+    margin: 16px auto 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.005em;
+}
+
+.fourth_screen .container main {
+    width: 1040px;
+    margin: 43px auto 0;
+    display: flex;
+    justify-content: space-between
+}
+
+.fourth_screen .container main .plan_card {
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.fourth_screen .container main .plan_card:nth-child(2) {
+    background: #064BB4;
+    color: white;
+}
+
+.fourth_screen .container main .plan_card .price {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+}
+
+.fourth_screen .container main .plan_card .price span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #D1D1D6;
+}
+
+.fourth_screen .container main .plan_card .type_plan {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    color: #064BB4;
+}
+
+.fourth_screen .container main .plan_card:nth-child(2) .type_plan {
+    color: white;
+}
+
+.fourth_screen .container main .plan_card .privilege {
+    margin-top: 32px;
+}
+
+.fourth_screen .container main .plan_card .privilege div {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.fourth_screen .container main .plan_card .privilege div p {
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+.fourth_screen .container main .plan_card .btn_plan {
+    width: 240px;
+    height: 46px;
+    margin-top: 32px;
+    background: #BCFF5E;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+}
+
+.feedback {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.feedback .container .btn {
+    width: 5.143vw;
+    height: 38px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #e9ebed;
+    background-color: #f9f9fb;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #064bb4;
+}
+
+.feedback .container h2 {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+}
+
+.feedback .container .review_box {
+    width: 44.01vw;
+    margin: 48px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback .container .review_box .main {
+    width: 39.868vw;
+    margin-left: 16px;
+    position: relative;
+}
+
+.feedback .container .review_box .main span {
+    color: var(--secondary-font-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+
+.feedback .container .review_box .main .cards_review {
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+.feedback .container .review_box .main .cards_review .client_review {
+    height: 128px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.12px;
+}
+
+.feedback .container .review_box .main .cards_review .client {
+    display: flex;
+    align-items: center;
+}
+
+.feedback .container .review_box .main .cards_review .client_photo {
+    margin: 32px 12px 0 0;
+}
+
+.feedback .container .review_box .main .cards_review  .personal_info {
+    width: 6.51vw;
+    margin-top: 32px;
+}
+
+.feedback .container .review_box .main .cards_review  .personal_info p {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.005em;
+}
+
+.feedback .container .review_box .main .cards_review .personal_info span {
+    color: var(--main-font-color);
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.005em;
+} 
+
+.feedback .container .review_box .main .slider {
+    width: 128px;
+    margin: 32px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixth_screen {
+    background-color: #064BB4;
+}
+
+.sixth_screen .container {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sixth_screen .container article {
+    width: 48.177vw;
+}
+
+.sixth_screen .container article h2 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
+
+.sixth_screen .container article p {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+}
+
+.sixth_screen .container aside {
+    width: 29.948vw;
+}
+
+.sixth_screen .container aside button {
+    width: 11.068vw;
+    height: 56px;
+    margin: 44px 0 44px 290px;
+    background: #BCFF5E;
+    border-radius: 24px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+footer {
+    background-color: #08172d;
+    padding-top: 120px;
+    padding-bottom: 24px;
+}
+
+footer .content {
+    width: 78.125vw;
+    margin: 0 auto 96px;
+    display: flex;
+}
+
+footer .content .logo_whith_description {
+    width: 23.633vw;
+}
+
+footer .content .logo_whith_description a {
+    width: 8.008vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.065em;
+    color: #ffffff;
+}
+
+footer .content .logo_whith_description p {
+    width: 100%;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #aeaeb2;
+}
+
+footer .content .menu_list {
+    width: 30.664vw;
+}
+
+footer .content .menu_list .top_menu {
+    width: 19.271vw;
+    margin: 0 auto;
+}
+
+footer .content .menu_list .lower_menu {
+    width: 15.951vw;
+    margin: 32px auto 0;
+}
+
+footer .content .menu_list .top_menu ul,
+footer .content .menu_list .lower_menu ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer .content .menu_list .top_menu ul li a,
+footer .content .menu_list .lower_menu ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #c5c5c5;
+}
+
+footer .content .aside_box {
+    width: 23.828vw;
+}
+
+footer .content .aside_box .newslatter a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #8e8e93;
+}
+
+footer .content .aside_box .active_box {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content .aside_box .active_box input {
+    width: 16.081vw;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 8px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 32px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #cbcbcb;
+}
+
+footer .content .aside_box .active_box button {
+    width: 6.706vw;
+    height: 56px;
+    background: #bcff5e;
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+footer .lower_border {
+    width: 78.125vw;
+    margin: 0 auto;
+    border: 1px solid #e9ebed;
+    opacity: 0.16;
+}
+
+footer .lower_box_content {
+    width: 78.125vw;
+    margin: 24px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .lower_box_content p {
+    width: 11.979vw;
+    margin: 8px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #aeaeb2;
+}
+
+footer .lower_box_content .social_media_list {
+    width: 15.625vw;
+}
+
+footer .lower_box_content .social_media_list ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .lower_box_content .policy_info {
+    width: 17.448vw;
+}
+
+footer .lower_box_content .policy_info ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .lower_box_content .policy_info ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #c5c5c5;
+}

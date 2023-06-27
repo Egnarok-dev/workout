@@ -1,0 +1,188 @@
+* {
+    font-family: "General Sans";
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  a {
+    color: #064BB4;
+  }
+  
+  body.show-sign-in-modal .sign-up-backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+  
+  body.show-sign-in-modal .modal {
+    transform: scale(1);
+  }
+  
+  .sign_in_modal .sign-up-backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 98.9vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal {
+    width: 596px;
+    padding: 48px;
+    background: #ffffff;
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.08);
+    border-radius: 24px;
+    position: relative;
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal .exit-btn {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #F9F9FB;
+    box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.1);
+    border-radius: 32px;
+    border: none;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal .exit-btn img {
+    padding: 4px;
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal .logo-img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal h2 {
+    width: 336px;
+    margin: 32px auto 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.005em;
+  }
+  
+  
+  
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box .email_box input {
+    height: 52px;
+    margin-top: 8px;
+    background: #FFFFFF;
+    border: 1px solid #E9EBED;
+    border-radius: 24px;
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #AEAEB2;
+  }
+
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box .password_box {
+    margin-top: 32px;
+  }
+
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box .password_box div{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    position: relative;
+  }
+
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box .password_box div input {
+    width: 100%;
+    height: 52px; 
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #AEAEB2;
+    background: #FFFFFF;
+    border: 1px solid #E9EBED;
+    border-radius: 24px;
+    padding-left: 16px;  
+  }
+
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box .password_box div button {
+    margin-right: 16px;
+    border: none;
+    background: #FFFFFF;
+    position: absolute;
+    top: 17px;
+    right: 0px;
+  }
+
+  
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box .modal_btn {
+    width: 100%;
+    height: 56px;
+    margin-top: 32px;
+    background: #BCFF5E;
+    border-radius: 24px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #1C1C1E;
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal .sign_in_box .checkbox {
+    width: 100%;
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #AEAEB2;
+  }
+  
+  .sign_in_modal .sign-up-backdrop .modal .bottom_text {
+    width: 134px;
+    margin: 48px auto 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #8E8E93;
+  }

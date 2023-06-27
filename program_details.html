@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service</title>
+    <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="style/program_details.css" />
+    <link rel="stylesheet" href="style/sign_in modal.css" />
+    <link rel="stylesheet" href="style/sign_up modal.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_logo">
+          <a href="index.html">
+            <img
+              src="./gallery/icons/programs/progrmas_header_logo.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="nav_menu burger_menu">
+          <ul class="menu_categories">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <ul class="menu_bar">
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/programs/programs_header_cart.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <button class="log_in-btn" data-action="open-sign-in-modal">
+                Log In
+              </button>
+            </li>
+            <li>
+              <button class="sign_up-btn" data-action="open-sign-up-modal">
+                Sign Up
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="sign_up_modal">
+      <div class="backdrop js-backdrop">
+        <div class="modal">
+          <button class="exit-btn" data-action="close-sign-up-modal">
+            <img src="./gallery/icons/sign_up_modal/exit_btn.png" alt="" />
+          </button>
+          <img
+            class="logo-img"
+            src="./gallery/icons/sign_up_modal/Logo.png"
+            alt="Logo"
+          />
+          <h2>Welcome to Workout</h2>
+          <div class="other_account">
+            <button>
+              <img
+                src="./gallery/icons/sign_up_modal/Icon - Google.png"
+                alt="Google logo"
+              />
+              <p>Continue with Google</p>
+            </button>
+            <button>
+              <img
+                src="./gallery/icons/sign_up_modal/Icon - Apple.png"
+                alt="Apple logo"
+              />
+              <p>Continue with Apple</p>
+            </button>
+          </div>
+          <div class="border_line">
+            <div class="bottom_line"></div>
+            <p>Or Sign Up with</p>
+            <div class="bottom_line"></div>
+          </div>
+          <form class="sign_up_box" autocomplete="off">
+            <label class="email_box">
+              Email
+              <input type="email" name="email" placeholder="Enter your email" />
+            </label>
+            <button data-action="send-sign-up-modal">
+              <p>Continue</p>
+            </button>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <p>
+                I agree to Claraa <a href="">Terms of Use</a> and
+                <a href="">Privacy Policy</a>
+              </p>
+            </label>
+          </form>
+          <p class="bottom_text">
+            Already have an account?
+            <button data-action="open-other-modal">Log In</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sign_in_modal">
+      <div class="sign-up-backdrop js-backdrop js-sign-up-backdrop">
+        <div class="modal">
+          <button class="exit-btn" data-action="close-sign-in-modal">
+            <img src="./gallery/icons/sign_up_modal/exit_btn.png" alt="" />
+          </button>
+          <img
+            class="logo-img"
+            src="./gallery/icons/sign_up_modal/Logo.png"
+            alt="Logo"
+          />
+          <h2>Hey there, welome back!</h2>
+          <form class="sign_in_box" autocomplete="off">
+            <label class="email_box">
+              Email
+              <input type="email" name="email" placeholder="Enter your email" />
+            </label>
+            <label class="password_box">
+              Password
+              <div>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter your password"
+                />
+                <button>
+                  <img
+                    src="./gallery/icons/sign_in_modal/eye-slash.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </label>
+            <button class="modal_btn" data-action="send-sign-in-modal">
+              <p>Login</p>
+            </button>
+          </form>
+          <p class="bottom_text">
+            <a href="">Forgot Password?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="first_screen">
+        <div class="container">
+            <main>
+                <h2>Personal <span>Training</span></h2>
+                <p class="short_description">It’s a long estabilished fact that a reader will be distracted by <br> the readable content</p>
+                <div class="result_box">
+                    <div class="flex_box">
+                        <img src="./gallery/icons/membership/Basic plan/fitness-biceps.png" alt="">
+                        <p><span>01</span><br>Power Up</p>
+                    </div>
+                    <div class="flex_box">
+                        <img src="./gallery/icons/membership/Basic plan/timer.png" alt="">
+                        <p><span>02</span><br>Be Flexible</p>
+                    </div>
+                    <div class="flex_box">
+                        <img src="./gallery/icons/membership/Basic plan/fitness-dumbbell.png" alt="">
+                        <p><span>03</span><br>Super Body Toning</p>
+                    </div>
+                </div>
+                <iframe width="942" height="530" src="https://www.youtube.com/embed/ZXsQAXx_ao0" title="Shia LaBeouf &quot;Just Do It&quot; Motivational Speech (Original Video by LaBeouf, Rönkkö &amp; Turner)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>What is this class about?</h3>
+                <p class="text_description">
+                    Pretium sed tempor vestibulum sit urna. Potenti purus sodales in enim nunc. In et auctor fusce sit donec condimentum. Diam ultrices enim nunc ornare id aliquet sed arcu commodo. Aliquam morbi fermentum amet dui ullamcorper praesent elit. Viverra nam massa cursus leo blandit eget eu. Tempor enim neque metus nunc sodales at eros. Malesuada placerat vestibulum amet sit tempor mi dignissim. Feugiat nullam urna gravida vulputate mi eleifend laoreet. 
+                </p>
+                <h3>Is this the right fitness class for me?</h3>
+                <p class="text_description">
+                    Viverra urna imperdiet non malesuada. In massa id tellus natoque augue in et, et. Suspendisse feugiat <a href="">scelerisque</a>  et, viverra urna imperdiet.Vitae interdum quis lacus ut viverra.
+                    <ol>
+                        <li>Enim eu turpis egestas pretium aenean pharetra magna ac placerat.</li>
+                        <li>Nunc semper velit netus donec commodo.</li>
+                        <li>Lacus hendrerit aliquam habitant eget faucibus venenatis turpis</li>
+                    </ol>
+                </p>
+                <h3>How can I take a trial class?</h3>
+                <p class="text_description">
+                    Diam ultrices enim nunc ornare id aliquet sed arcu commodo. Aliquam morbi fermentum amet dui ullamcorper praesent elit. Viverra nam massa cursus leo blandit eget eu. Tempor enim neque metus nunc sodales at eros. Malesuada placerat vestibulum amet sit tempor mi dignissim. Feugiat nullam urna gravida vulputate mi eleifend laoreet. 
+                </p>
+            </main>
+            <aside>
+                <h4>Details Program</h4>
+                <p>It’s a long estabilished fact that a reader will be distracted by the readable content</p>
+                    <ul>
+                        <li><img src="./gallery/icons/program_detail/aside_1.png" alt="icon"><span>Duration:</span> 60 minutes</li>
+                        <li><img src="./gallery/icons/program_detail/aside_2.png" alt="icon"><span>Intensity:</span> High</li>
+                        <li><img src="./gallery/icons/program_detail/aside_3.png" alt="icon"><span>Fitness Level:</span> Intermediate</li>
+                        <li><img src="./gallery/icons/program_detail/aside_4.png" alt="icon"><span>Schedule:</span> Monday, Friday</li>
+                    </ul>
+                    <button class="btn">Book a Class</button>
+            </aside>
+        </div>
+    </div>
+    <div class="second_screen">
+        <div class="container">
+            <button class="btn">Review</button>
+            <h2>What Our Happy <br> Clients Say</h2>
+            <div class="review_box">
+                <aside>
+                    <img src="./gallery/icons/fifth_screen_icon.png" alt="">
+                </aside>
+                <article>
+                    <span>Member Review</span>
+                    <p class="client_review">Eget aliquet sit at lacinia. Magna consequat consectetur maecenas amet sagittis mi. Mattis cursus dolor amet quam commodo amet in sed dui. Risus risus sed sed lectus. </p>
+                    <div class="client">
+                        <div class="client_photo">
+                            <img src="./gallery/images/fifth_screen_client_photo.png" alt="">
+                        </div>
+                        <div class="personal_info">
+                            <p>Davis Rosser</p>
+                            <span>Member</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="carousel_menu">
+                <button>
+                    <img src="./gallery/icons/fifth_screen_arrow-left_icon.png" alt="">
+                </button>
+                <div class="points">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button>
+                    <img src="./gallery/icons/fifth_screen_arrow-right_icon.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="content">
+        <div class="logo_whith_description">
+          <a href=""
+            ><img
+              src="./gallery/icons/footer_heart-checkmark_icon.png"
+              alt=""
+            />Bulking</a
+          >
+          <p>
+            Get fit, stay healthy, and live life on their terms without fitness
+            being an obstacle.
+          </p>
+        </div>
+        <div class="menu_list">
+          <div class="top_menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Programs</a></li>
+              <li><a href="">Membership</a></li>
+            </ul>
+          </div>
+          <div class="lower_menu">
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="aside_box">
+          <div class="newslatter">
+            <a href="">Newsletter</a>
+          </div>
+          <div class="active_box">
+            <input type="email" placeholder="Your email here" />
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+      <div class="lower_border"></div>
+      <div class="lower_box_content">
+        <p>© 2022 Nguli® Global Inc.</p>
+        <div class="social_media_list">
+          <ul>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_1.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_2.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_3.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_4.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_5.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="policy_info">
+          <ul>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="privacy_police.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/sign_in modal.js" type="module"></script>
+    <script src="js/sign_up modal.js" type="module"></script>
+  </body>
+</html>

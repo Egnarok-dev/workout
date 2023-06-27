@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/sign_up modal.css" />
+    <link rel="stylesheet" href="style/sign_in modal.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_logo">
+          <a href="index.html">
+            <img src="./gallery/icons/header_logo_icon.png" alt="" />
+          </a>
+        </div>
+        <div class="nav_menu burger_menu">
+          <ul class="menu_categories">
+            <li><a href="#home">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="menu_bar">
+            <li>
+              <a href=""
+                ><img src="./gallery/icons/header_cart_icon.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <button class="log_in-btn" data-action="open-sign-in-modal">
+                Log In
+              </button>
+            </li>
+            <li>
+              <button class="sign_up-btn" data-action="open-sign-up-modal">
+                Sign Up
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="sign_up_modal">
+      <div class="backdrop js-backdrop">
+        <div class="modal">
+          <button class="exit-btn" data-action="close-sign-up-modal">
+            <img src="./gallery/icons/sign_up_modal/exit_btn.png" alt="" />
+          </button>
+          <img
+            class="logo-img"
+            src="./gallery/icons/sign_up_modal/Logo.png"
+            alt="Logo"
+          />
+          <h2>Welcome to Workout</h2>
+          <div class="other_account">
+            <button>
+              <img
+                src="./gallery/icons/sign_up_modal/Icon - Google.png"
+                alt="Google logo"
+              />
+              <p>Continue with Google</p>
+            </button>
+            <button>
+              <img
+                src="./gallery/icons/sign_up_modal/Icon - Apple.png"
+                alt="Apple logo"
+              />
+              <p>Continue with Apple</p>
+            </button>
+          </div>
+          <div class="border_line">
+            <div class="bottom_line"></div>
+            <p>Or Sign Up with</p>
+            <div class="bottom_line"></div>
+          </div>
+          <form class="sign_up_box" autocomplete="off">
+            <label class="email_box">
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </label>
+            <button data-action="send-sign-up-modal">
+              <p>Continue</p>
+            </button>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <p>
+                I agree to Claraa <a href="">Terms of Use</a> and
+                <a href="">Privacy Policy</a>
+              </p>
+            </label>
+          </form>
+          <p class="bottom_text">
+            Already have an account? <button data-action="open-other-modal">Log In</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sign_in_modal">
+      <div class="sign-up-backdrop js-backdrop js-sign-up-backdrop">
+        <div class="modal">
+          <button class="exit-btn" data-action="close-sign-in-modal">
+            <img src="./gallery/icons/sign_up_modal/exit_btn.png" alt="" />
+          </button>
+          <img
+            class="logo-img"
+            src="./gallery/icons/sign_up_modal/Logo.png"
+            alt="Logo"
+          />
+          <h2>Hey there, welome back!</h2>
+          <form class="sign_in_box" autocomplete="off">
+            <label class="email_box">
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </label>
+            <label class="password_box">
+              Password
+              <div>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter your password"
+                />
+                <button>
+                  <img
+                    src="./gallery/icons/sign_in_modal/eye-slash.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </label>
+            <button class="modal_btn" data-action="send-sign-in-modal">
+              <p>Login</p>
+            </button>
+          </form>
+          <p class="bottom_text">
+            <a href="">Forgot Password?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="first_screen" id="home">
+      <div class="container">
+        <div class="upper_section">
+          <main>
+            <h1>For Your Health and Fitness Goals in No Time</h1>
+            <p>
+              It doesn’t matter if your goal is to get stronger, burn fat, or to
+              just stay fit our world class coaches will guide you every step of
+              the way.
+            </p>
+            <button>Book a Class</button>
+            <section>
+              <p>Supported by:</p>
+              <div class="brand_list">
+                <img src="./gallery/images/first_screen_logo_1.png" alt="" />
+                <img src="./gallery/images/first_screen_logo_2.png" alt="" />
+                <img src="./gallery/images/first_screen_logo_3.png" alt="" />
+                <img src="./gallery/images/first_screen_logo_4.png" alt="" />
+              </div>
+            </section>
+          </main>
+          <aside>
+            <img
+              class="first_card"
+              src="./gallery/images/first_screen_heart_rate_1.png"
+              alt=""
+            />
+            <img
+              class="second_card"
+              src="./gallery/images/first_screen-heart_rate_2.png"
+              alt=""
+            />
+            <div class="ellipse">
+              <img
+                class="first_ellipse"
+                src="./gallery/images/first_screen_ellipse_1.png"
+                alt=""
+              />
+              <img
+                class="second_ellipse"
+                src="./gallery/images/first_screen_ellipse_2.png"
+                alt=""
+              />
+            </div>
+          </aside>
+        </div>
+        <div class="under_section">
+          <div class="our_program">
+            <div class="card">
+              <img src="./gallery/icons/first_screen_card_icon_1.png" alt="" />
+              <h4>Personal Training</h4>
+              <p>
+                It’s a long estabilished fact that a reader will be distracted
+                by the readable content
+              </p>
+              <a href=""
+                >Learn More<img
+                  src="./gallery/icons/first_screen_vector.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="card">
+              <img src="./gallery/icons/first_screen_card_icon_2.png" alt="" />
+              <h4>Workout Programs</h4>
+              <p>
+                It’s a long estabilished fact that a reader will be distracted
+                by the readable content
+              </p>
+              <a href=""
+                >Learn More<img
+                  src="./gallery/icons/first_screen_vector.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="card">
+              <img src="./gallery/icons/first_screen_card_icon_3.png" alt="" />
+              <h4>Program & Diet</h4>
+              <p>
+                It’s a long estabilished fact that a reader will be distracted
+                by the readable content
+              </p>
+              <a href=""
+                >Learn More<img
+                  src="./gallery/icons/first_screen_vector.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="aside_box">
+            <h3>Training Program For You</h3>
+            <p>
+              Starting a fitness routine can be intimidating, but it helps to
+              have an idea of whar to expect before joining any class.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second_screen">
+      <div class="container">
+        <h2>We offer something for everybody</h2>
+        <div class="info_box">
+          <article>
+            <img src="./gallery/icons/first_screen_card_icon_1.png" alt="" />
+            <h3>
+              Crush any strength program with our suite of strength equipment
+            </h3>
+            <section>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>Fully fitted powerlifting and strongman section</p>
+              </div>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>Olympic lifting platforms, weights, and bars</p>
+              </div>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>Dumbells ranging 5lbs-250lbs</p>
+              </div>
+            </section>
+            <div class="border_line"></div>
+            <button>Join Now</button>
+          </article>
+          <aside>
+            <img src="./gallery/images/second_screen_gym.png" alt="" />
+          </aside>
+        </div>
+      </div>
+    </div>
+    <div class="third_screen">
+      <div class="container">
+        <div class="info_box">
+          <aside>
+            <img src="./gallery/images/third_screen_gym.png" alt="" />
+          </aside>
+          <article>
+            <img src="./gallery/icons/third_screen_icon.png" alt="" />
+            <h3>
+              Be guided every step of the way with one of our world class
+              coaches
+            </h3>
+            <section>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>Weightloss</p>
+              </div>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>Powerlifting</p>
+              </div>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>Dumbells ranging 5lbs-250lbs</p>
+              </div>
+            </section>
+            <div class="border_line"></div>
+            <button>Join Now</button>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="fourth_screen">
+      <div class="container">
+        <button class="btn">Membership</button>
+        <h2>Crushing your health and fitness goals starts here...</h2>
+        <main>
+          <div class="plan_card">
+            <div class="price">
+              <p>$0<span>/Month</span></p>
+            </div>
+            <p class="type_plan">Free Plan</p>
+            <div class="privilege">
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>1 classes per month</p>
+              </div>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>Access to online classes</p>
+              </div>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>10 health & fitness guides</p>
+              </div>
+            </div>
+            <button class="btn_plan">Puchase Plan</button>
+          </div>
+          <div class="plan_card">
+            <div class="price">
+              <p>$149.00<span>/Month</span></p>
+            </div>
+            <p class="type_plan">Basic Plan</p>
+            <div class="privilege">
+              <div>
+                <img
+                  src="./gallery/icons/fourth_screen_hover_icon.png"
+                  alt=""
+                />
+                <p>8 classes per month</p>
+              </div>
+              <div>
+                <img
+                  src="./gallery/icons/fourth_screen_hover_icon.png"
+                  alt=""
+                />
+                <p>All in basic package</p>
+              </div>
+              <div>
+                <img
+                  src="./gallery/icons/fourth_screen_hover_icon.png"
+                  alt=""
+                />
+                <p>1-on-1 personal trainning</p>
+              </div>
+            </div>
+            <button class="btn_plan">Puchase Plan</button>
+          </div>
+          <div class="plan_card">
+            <div class="price">
+              <p>$289.00<span>/Month</span></p>
+            </div>
+            <p class="type_plan">Professional Plan</p>
+            <div class="privilege">
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>20 classes per month</p>
+              </div>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>All in Intermediate package</p>
+              </div>
+              <div>
+                <img src="./gallery/icons/second_screen_chacked.png" alt="" />
+                <p>Access to my online tutorials</p>
+              </div>
+            </div>
+            <button class="btn_plan">Puchase Plan</button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="feedback">
+      <div class="container">
+        <button class="btn">Review</button>
+        <h2>What Our Happy <br> Clients Say</h2>
+        <div class="review_box ">
+          <aside>
+            <img src="./gallery/icon/home/fifth_screen_icon.png" alt="" />
+          </aside>
+          <div class="main">
+            <span>Member Review</span>
+            <ul class="cards_review fade">
+              <li>
+                <p class="client_review">
+                  Eget aliquet sit at lacinia. Magna consequat <br> consectetur maecenas
+                  amet sagittis mi. Mattis cursus <br> dolor amet quam commodo amet in
+                  sed dui. Risus risus <br> sed sed lectus.
+                </p>
+                <div class="client">
+                  <div class="client_photo">
+                    <img src="gallery/images/feedback/fifth_screen_client_photo.png" alt="" />
+                  </div>
+                  <div class="personal_info">
+                    <p>Davis Rosser</p>
+                    <span>Member</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p class="client_review">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing <br> elit. Asperiores, inventore! Explicabo consequatur <br> harum, voluptates  expedita <br> repellendus accusantium.
+                </p>
+                <div class="client">
+                  <div class="client_photo">
+                    <img src="gallery/images/feedback/fifth_screen_client_photo.png" alt="" />
+                  </div>
+                  <div class="personal_info">
+                    <p>John Doe</p>
+                    <span>Member</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p class="client_review">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing <br> elit. In cum illo labore veritatis fuga harum assumenda <br> delectus sint  velit aspernatur voluptates reprehenderit <br> quidem, excepturi ratione?
+                </p>
+                <div class="client">
+                  <div class="client_photo">
+                    <img src="gallery/images/feedback/fifth_screen_client_photo.png" alt="" />
+                  </div>
+                  <div class="personal_info">
+                    <p>Frank Smith</p>
+                    <span>Member</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="slider">
+              <div class="dots-slider"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sixth_screen">
+      <div class="container">
+        <article>
+          <h2>Discover Your Potential</h2>
+          <p>
+            Workout was started by James and Mount in 2012. It’s our mission to
+            help people in Denver get fit, stay healthy, and live life on their
+            terms without fitness being an obstacle.
+          </p>
+        </article>
+        <aside>
+          <button>Get Started</button>
+        </aside>
+      </div>
+    </div>
+    <footer>
+      <div class="content">
+        <div class="logo_whith_description">
+          <a href=""
+            ><img
+              src="./gallery/icons/footer_heart-checkmark_icon.png"
+              alt=""
+            />Bulking</a
+          >
+          <p>
+            Get fit, stay healthy, and live life on their terms without fitness
+            being an obstacle.
+          </p>
+        </div>
+        <div class="menu_list">
+          <div class="top_menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Programs</a></li>
+              <li><a href="">Membership</a></li>
+            </ul>
+          </div>
+          <div class="lower_menu">
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="aside_box">
+          <div class="newslatter">
+            <a href="">Newsletter</a>
+          </div>
+          <div class="active_box">
+            <input type="email" placeholder="Your email here" />
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+      <div class="lower_border"></div>
+      <div class="lower_box_content">
+        <p>© 2022 Nguli® Global Inc.</p>
+        <div class="social_media_list">
+          <ul>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_1.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_2.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_3.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_4.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./gallery/icons/footer_social_media_list_5.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="policy_info">
+          <ul>
+            <li><a href="terms_of_service.html">Terms of Service</a></li>
+            <li><a href="privacy_police.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/sign_up modal.js" type="module"></script>
+    <script src="js/sign_in modal.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>
